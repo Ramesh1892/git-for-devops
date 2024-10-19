@@ -36,8 +36,8 @@ git branch
 git restore <file_name>
 
 12. Configure Git User
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "Ramesh Vutukuri"
+git config --global user.email "rameshvutukurii@gmail.com"
 
 13. View File Content
 cat <file_name>
