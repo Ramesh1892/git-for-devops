@@ -1,75 +1,83 @@
-# Git Commands Cheat Sheet
-1. Initialize a Git Repository
-git init
+# Command History in Markdown
 
-2. Check Status of Files in the Repo
-git status
+## 1. **Directory and Navigation**
+   - Create a directory:  
+     `mkdir git-for-devops`
+   - List files in the directory:  
+     `ls`
+   - Change to the directory:  
+     `cd git-for-devops/`
+   - Show the current directory path:  
+     `pwd`
+   - Clear the terminal:  
+     `clear`
 
-3. Add Files to Staging Area
-git add <file_name> # Add a specific file
-git add . # Add all files
+## 2. **File Operations**
+   - Create or edit a file:  
+     `vim Ramesh.txt`
+   - Display the content of a file:  
+     `cat Ramesh.txt`
+   - Create multiple files:  
+     `touch Hema.txt`  
+     `touch Aadvik.txt`
+   - Delete a file:  
+     `rm Ramesh.txt`
+   - List files with details:  
+     `ls -l`
+   - Show hidden files:  
+     `ls -a`
+   - Remove a file from the staging area (cached):  
+     `git rm --cached Hema.txt`
+   - Remove a file:  
+     `git rm --Hema.txt`
+   - Restore a deleted file:  
+     `git restore Hema.txt`
 
-4. Commit Changes
-git commit -m "commit message"
+## 3. **Git Initialization**
+   - Initialize a Git repository:  
+     `git init`
 
-5. View Commit History
-git log
-git log --oneline # View a summarized history
+## 4. **Git Configuration**
+   - Set the global Git username:  
+     `git config --global user.name "Ramesh1892"`
+   - Set the global Git email:  
+     `git config --global user.email "rameshvutukurii@gmail.com"`
 
-6. Create a New Branch
-git checkout -b <branch_name>
+## 5. **Viewing Git Status**
+   - Check the status of the working directory and staging area:  
+     `git status`
 
-7. Switch Between Branches
-git checkout <branch_name>
+## 6. **Staging and Committing Changes**
+   - Add files to the staging area:  
+     `git add Hema.txt`  
+     `git add Aadvik.txt`  
+     `git add tinku.txt`
+   - Commit changes to the repository:  
+     `git commit -m "adding Hema Aadvik"`  
+     `git commit -m "added changes in Hema file"`  
+     `git commit -m "added tinku"`
 
-8. Delete a File
-rm <file_name>
+## 7. **Branching**
+   - Create a new branch:  
+     `git checkout -b dev`
+   - Switch between branches:  
+     `git checkout master`  
+     `git checkout dev`
+   - List all branches:  
+     `git branch`
 
-9. Remove a File from Git (Staging)
-git rm <file_name>
-git rm --cached <file_name> # Remove from staging but keep the file
+## 8. **Viewing Logs and History**
+   - View the commit history:  
+     `git log`
+   - View a concise commit history (oneline):  
+     `git log --oneline`
+   - Show command history:  
+     `history`
 
-10. View Branches
-git branch
-
-11. Restore a File
-git restore <file_name>
-
-12. Configure Git User
-git config --global user.name "Ramesh Vutukuri"
-git config --global user.email "rameshvutukurii@gmail.com"
-
-13. View File Content
-cat <file_name>
-
-14. List Files in the Directory
-ls
-ls -l # Detailed view
-ls -a # Show hidden files
-
-15. Clean the Console
-clear
-
-16. Check System Uptime
-uptime
-
-17. Check the Current Date and Time
-date
-
-18. Show Git Commit History in a Pretty Format
-git log --oneline
-
-19. Commit all Staged Files
-git commit -m "message"
-
-20. Remove a Staged File
-git rm --cached <file_name>
-
-21. Switch to a Branch
-git checkout <branch_name>
-
-22. Create a New Branch
-git checkout -b <branch_name>
-
-23. View Command History
-history
+## 9. **Other Operations**
+   - Show system uptime:  
+     `uptime`
+   - Show the current date and time:  
+     `date`
+   - Show current working directory:  
+     `pwd`
