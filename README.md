@@ -1,1 +1,13 @@
-This is Ramesh Vutukuri this repo is for learning devops 
+# Git For DevOps
+
+
+This repository is for understanding Git Concepts for DevOps.
+
+Includes:
+
+-Commands
+-Tutorials
+-Videos
+-Projects
+-tasks
+ 
