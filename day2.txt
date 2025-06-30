@@ -1,0 +1,29 @@
+# 📅 Git Day 2 – File Tracking, Status, and Logs
+# 👨‍💻 By: Ramesh Vutukuri
+
+# ----------------------------------------
+# ✅ Create multiple files
+echo "DevOps" > dev.txt
+echo "Cloud" > cloud.txt
+
+# ✅ Track file changes
+git add dev.txt
+git commit -m "Added dev.txt"
+git status
+
+# ✅ Remove a file from Git (but keep locally)
+git rm --cached cloud.txt
+
+# ✅ View commit history
+git log --oneline
+git show <commit-id>
+
+# ✅ Check difference
+git diff             # Between working dir and staging
+git diff --cached    # Between staging and last commit
+
+# 🧠 Concepts:
+# - `git rm --cached`: Untracks a file but keeps it
+# - `git diff`: Shows what's changed before committing
+# - `git show`: Shows details of a commit
+

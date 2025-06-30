@@ -1,0 +1,28 @@
+# 📅 Git Day 1 – Git Basics
+# 👨‍💻 By: Ramesh Vutukuri
+# 🎯 Goal: Understand the basic Git workflow
+
+# ----------------------------------------
+# ✅ Step 1: Initialize a Git repository
+git init
+
+# ✅ Step 2: Create a sample file
+echo "Hello Git" > hello.txt
+
+# ✅ Step 3: Check current status
+git status
+
+# ✅ Step 4: Add file to staging
+git add hello.txt
+
+# ✅ Step 5: Commit the file
+git commit -m "Initial commit: added hello.txt"
+
+# ✅ Step 6: View commit history
+git log
+
+# 🧠 Concepts:
+# - `git init`: Starts a local repo
+# - `git add`: Moves changes to staging area
+# - `git commit`: Saves changes permanently in local history
+
