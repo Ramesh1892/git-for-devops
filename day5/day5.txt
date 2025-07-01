@@ -1,0 +1,9 @@
+# Git Day 5 – Merge Conflict Practice
+
+✅ Created main branch and committed Version 1
+✅ Created feature branch and modified app.txt
+✅ Switched back to main and added a hotfix
+✅ Merged feature into main → caused merge conflict
+✅ Manually resolved conflict in app.txt
+✅ Committed resolved version
+

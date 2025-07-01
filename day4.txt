@@ -1,0 +1,46 @@
+# 📅 Git Day 4 – GitHub Workflow, Feature Branches, PRs
+# 👨‍💻 By: Ramesh Vutukuri
+
+# ----------------------------------------
+# ✅ Step 1: Initialize new project
+mkdir day4
+cd day4
+git init
+echo "Version 1" > app.sh
+git add app.sh
+git commit -m "Initial commit"
+
+# ✅ Step 2: Create feature branch
+git checkout -b feature-login
+echo "Feature: login page" >> app.sh
+git commit -am "Added login feature"
+
+# ✅ Step 3: Add hotfix in main branch
+git checkout main
+echo "Hotfix: patched issue" >> app.sh
+git commit -am "Applied hotfix"
+
+# ✅ Step 4: Merge feature (creates conflict)
+git merge feature-login
+# Fix conflict in app.sh manually, then:
+git add app.sh
+git commit -m "Merged feature-login and resolved conflict"
+
+# ✅ Step 5: Connect to GitHub repo
+git remote add origin https://github.com/Ramesh1892/git-for-devops.git
+git branch -M main
+git push -u origin main
+
+# ✅ Step 6: Push feature branch and raise PR
+git checkout -b feature-logout
+echo "Logout Feature" >> app.sh
+git commit -am "Added logout feature"
+git push -u origin feature-logout
+
+# Go to GitHub → Create Pull Request → Merge
+
+# 🧠 Concepts:
+# - Feature branch: Isolate changes
+# - Pull request: Collaborate with team via GitHub
+# - Conflict resolution: Manual control
+

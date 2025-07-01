@@ -1,0 +1,43 @@
+# 📅 Git Day 3 – Branching and Conflict Resolution
+# 👨‍💻 By: Ramesh Vutukuri
+
+# ----------------------------------------
+# ✅ Step 1: Create and switch to new branch
+git checkout -b feature-branch
+
+# ✅ Step 2: Edit and commit a file
+echo "Feature A" > code.sh
+git add .
+git commit -m "Added Feature A in feature-branch"
+
+# ✅ Step 3: Switch back to main/master
+git checkout master
+
+# ✅ Step 4: Modify the same file (create conflict)
+echo "Hotfix Applied" > code.sh
+git add .
+git commit -m "Hotfix in master branch"
+
+# ✅ Step 5: Merge (expect conflict)
+git merge feature-branch
+
+# ✅ Step 6: Resolve conflict in code.sh
+# Keep both changes, remove conflict markers:
+# <<<<<<< HEAD
+# Hotfix Applied
+# =======
+# Feature A
+# >>>>>>> feature-branch
+
+git add code.sh
+git commit -m "Merged feature-branch with conflict resolved"
+
+# ✅ Step 7: Undo a specific commit (revert)
+git log --oneline
+git revert <commit-id>
+
+# 🧠 Concepts:
+# - `git checkout -b`: Create and switch branch
+# - `git merge`: Combine branches
+# - `git revert`: Safely undo a commit
+
